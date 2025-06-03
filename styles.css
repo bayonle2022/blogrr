@@ -486,6 +486,9 @@ ul{
      
     
     }
+    .hamburger{
+      cursor: pointer;
+    }
     .list{
    
       background-color: white;
@@ -493,6 +496,7 @@ ul{
       color: black;
       position: relative; right: 20vh;
       display: none;
+      
       width: 300px;
     }
     .phone-nav a{
