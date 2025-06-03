@@ -482,7 +482,8 @@ ul{
 
     .phone-nav {
       display: flex;
-      gap: 15vh;
+      justify-content: space-between;
+     
     
     }
     .list{
@@ -491,7 +492,7 @@ ul{
       margin-top: 5vh;
       color: black;
       position: relative; right: 20vh;
-
+      display: none;
       width: 300px;
     }
     .phone-nav a{
