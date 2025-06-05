@@ -484,19 +484,35 @@ ul{
       display: flex;
       justify-content: space-between;
      
+     
+      
+    }
+    .space{
+      display: flex;
+      justify-content: space-between;
+      gap:300px;
+      
+      ;
+    }
     
+    .header{
+      position: relative;
     }
     .hamburger{
       cursor: pointer;
+      
+     
     }
     .list{
    
-      background-color: white;
-      margin-top: 5vh;
-      color: black;
-      position: relative; right: 20vh;
-      display: none;
-      
+     background-color: white;
+  margin: 10vh auto 0;
+  position: relative;
+  right: 50vh;
+  color: black;
+  display: none;
+  width: 300px;
+  text-align: center;
       width: 300px;
     }
     .phone-nav a{
@@ -530,6 +546,12 @@ ul{
     }
     .phone-nav-links:hover .phone-dropdown{
     display: block;
+   
+}
+.register{
+  display: flex;
+  flex-direction: column;
+   gap:20px;
 }
     .header {
       height: auto;

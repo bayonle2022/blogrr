@@ -61,11 +61,17 @@
    
         </div>
         <div class="phone-nav">
+          <div class="space">
           <div>
             <img src="images/logo.svg" alt="">
+                        
+          </div>
+          <div>
+            <img src="images/icon-hamburger.svg" alt="" class="hamburger">
+          </div>
           </div>
           <div class="main">
-            <img src="images/icon-hamburger.svg" alt="" class="hamburger">
+
             <div class="list hidden">
             <ul>
   <li class="phone-nav-links">
@@ -98,6 +104,12 @@
     </ul>
   </li>
 </ul>
+<hr>
+ <div class="register">
+        <a href="Login.html"><button class="login"> Login</button></a>
+       <a href="registration.html"> <button class="sign-up"> Sign Up</button></a>
+        </div>
+   
 </div>
           </div>
         </div>
@@ -229,6 +241,18 @@ hamburger.addEventListener('click', () => {
     list.style.display = "block";
   } else {
     list.style.display = "none";
+  }
+});
+const hamburger1 = document.querySelector('.hamburger');
+let moved = false;
+
+hamburger1.addEventListener('click', () => {
+  if (!moved) {
+    hamburger1.style.left = '200px'; // shift right by 20px
+    moved = true;
+  } else {
+    hamburger1.style.left = '0px'; // go back to normal
+    moved = false;
   }
 });
 
