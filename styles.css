@@ -490,7 +490,7 @@ ul{
     .space{
       display: flex;
       justify-content: space-between;
-      gap:300px;
+     
       
       ;
     }
@@ -507,8 +507,8 @@ ul{
    
      background-color: white;
   margin: 10vh auto 0;
-  position: relative;
-  right: 50vh;
+  /* position: relative;
+  right: 47vh; */
   color: black;
   display: none;
   width: 300px;
@@ -563,4 +563,25 @@ ul{
       flex-direction: column;
       gap: 10px;
     }
+    .phone-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.hamburger-wrapper img {
+  height: 20px;
+  cursor: pointer;
+}
+
   }
