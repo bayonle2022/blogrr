@@ -59,7 +59,7 @@
         </div>
    
         </div>
-               <div class="phone-nav">
+        <div class="phone-nav">
   <div class="nav-header">
     <div class="logo">
       <img src="images/logo.svg" alt="Logo">
@@ -102,22 +102,27 @@
       </ul>
       <hr>
       <div class="register">
-  <button type="submit" class="login" style="margin-left: 100px;margin-top: 20px;margin-bottom: 20px;"> Log Out</button>
+        <button type="submit" class="login1" style="margin: 20px 100px;"> Log Out</button>
       </div>
     </div>
   </div>
 </div>
-           <h1>A modern publishing platform</h1>
+            <h1>Welcome back <span class="username" style="color:hsl(228, 45%, 44%)">John Doe</span></h1>
     <p>  Grow your audience and build your online brand</p>
     <div class="buttons">
 
      <a href="registration.html"> <button class="start-free">Start for Free</button></a>
       <button class="learn-more">Learn More</button>
-        </div>
- 
   </div>
  
   </div>
+  
+        
+       
+      
+
+
+   
 
     <div class="content">
           <h3> Design for the future</h3>
@@ -286,7 +291,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
-  
   <script>
 const hamburger = document.querySelector('.hamburger');
 const list = document.querySelector('.list');
@@ -312,9 +316,7 @@ hamburger1.addEventListener('click', () => {
 });
 
   </script>
-
   <script>
-    
 
     //fecth data from api server
     const fetchData = async function () {
@@ -353,6 +355,33 @@ hamburger1.addEventListener('click', () => {
 
     //logout
     document.querySelector('.login').addEventListener('click', async (e) => {
+      e.preventDefault();
+
+      try {
+        let url = "https://core.hisend.hunnovate.com/api/v1/projects/blogr/auth/logout?api_key=v2kLi82gZF8ROPq0bbkhILnK"
+          const response = await fetch(url, {
+            method: "POST",
+            body: {},
+            headers : {
+            'Authorization' : `Bearer ${localStorage.getItem('token')}`
+          }
+          })
+
+          let data = await response.json();
+          alert('logout successfully');
+
+          localStorage.removeItem('token');
+          window.location.href = "index.html";
+
+      } catch (error) {
+        alert('Error failed to logout', error.message);
+        console.error("Error, Failed to logout", error.message)
+      }
+    })
+    
+    ///2
+
+     document.querySelector('.login1').addEventListener('click', async (e) => {
       e.preventDefault();
 
       try {

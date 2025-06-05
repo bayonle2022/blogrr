@@ -98,7 +98,7 @@ ul{
   
 
 }
-.login{
+.login, .login1{
  background-color: hsl(356, 100%, 66%);
     color: white;
     border-radius: 30px;
@@ -464,8 +464,8 @@ ul{
     }
 
     .phone {
-      position: static;
-      transform: none;
+      /* position: static;
+      transform: none; */
       width: 60%;
       margin: 20px auto;
     }
@@ -541,7 +541,7 @@ ul{
     }
     .phone-dropdown{
       width: 100px;
-      background-color: aquamarine;
+      background-color: hsl(207, 13%, 34%);
       display: none;
     }
     .phone-nav-links:hover .phone-dropdown{
@@ -568,12 +568,42 @@ ul{
   flex-direction: column;
   padding: 20px;
 }
+#cont{
+ 
+}
 
 .nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.phone{
+  width: 80%;
+  position: relative;
+ 
+  bottom: 600px; left: 200px;
+  
+}
+
+
+.content2 .circle {
+  width: 100%;
+  position: relative;
+  bottom: 200px;
+}
+.content2 h3{
+  font-size: 33px;
+  position: relative;
+  bottom: 300px;
+}
+.content2 p {
+  position: relative;bottom: 300px;
+}
+.content2{
+  width: 100%;
+  height: 500px;
+}
+
 
 .logo img {
   height: 30px;
